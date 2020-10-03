@@ -14,7 +14,7 @@ export type SelectPropsType = {
 }
 
 
-export function Select(props: SelectPropsType) {
+function Select0(props: SelectPropsType) {
 
     const [active,setActive]=useState(false)
     const [hoveredElementValue,setHoveredElementValue]=useState(props.value)
@@ -77,3 +77,4 @@ const onKeyUp=(e:KeyboardEvent<HTMLDivElement>)=>{
 
 }
 
+export const Select=React.memo(Select0)

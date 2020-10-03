@@ -7,7 +7,7 @@ type PropsType={
 
 
 
-export function UncontrolledOnOff(props:PropsType) {
+ function UncontrolledOnOff0(props:PropsType) {
     let[on,setOn] =useState(props.defaultOn?props.defaultOn:false)
     const onClicked=()=>{
         setOn(true)
@@ -36,3 +36,4 @@ export function UncontrolledOnOff(props:PropsType) {
     }
 }
 
+export const UncontrolledOnOff=React.memo(UncontrolledOnOff0)

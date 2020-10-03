@@ -7,7 +7,7 @@ type OnOff2PropsType= {
     onClick:(on:boolean)=>void
 }
 
-export function OnOff2(props: OnOff2PropsType) {
+ function OnOff20(props: OnOff2PropsType) {
 
 
 
@@ -52,5 +52,4 @@ export function OnOff2(props: OnOff2PropsType) {
     )
 }
 
-
-
+export const OnOff2=React.memo(OnOff20)

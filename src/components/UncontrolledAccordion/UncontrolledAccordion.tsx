@@ -7,7 +7,7 @@ type AccordionPropsType={
 }
 
 
-export function UncontrolledAccordion(props: AccordionPropsType) {
+ function UncontrolledAccordion0(props: AccordionPropsType) {
 //let[collapsed,setCollapsed] = useState(false)
 let[state,dispatch] = useReducer(reducer,{collapsed:false})
 
@@ -25,7 +25,7 @@ type AccordionTitlePropsType={
     title:string
     onClick:()=>void
 }
-function AccordionTitle(props: AccordionTitlePropsType) {
+function AccordionTitle0(props: AccordionTitlePropsType) {
     return (
         <div>
             <h3 onClick={()=>{props.onClick()}}>{props.title}</h3>
@@ -33,7 +33,7 @@ function AccordionTitle(props: AccordionTitlePropsType) {
     )
 }
 
-function AccordionBody() {
+function AccordionBody0() {
     return (
         <div>
             <ul>
@@ -44,3 +44,6 @@ function AccordionBody() {
         </div>
     )
 }
+export const UncontrolledAccordion=React.memo(UncontrolledAccordion0)
+export const AccordionTitle=React.memo(AccordionTitle0)
+export const AccordionBody=React.memo(AccordionBody0)
