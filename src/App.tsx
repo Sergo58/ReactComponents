@@ -14,16 +14,16 @@ function App() {
   let [on,setON]=useState<boolean>(true)
   return (
       <div className="App">
-      {/*  <PageTitle title={"This is App component"}/>
+        <PageTitle title={"This is App component"}/>
         <UncontrolledAccordion titleValue={"Menu"} />
-        <UncontrolledAccordion titleValue={"User"} />
+       {/* <UncontrolledAccordion titleValue={"User"} />
          <Rating value={1}/>
             <Rating value={2}/>
             <Rating value={3}/>
             <Rating value={4}/>
             <Rating value={5}/>
         <UncontrolledOnOff onChange={setON} />{on.toString()}*/}
-        <OnOff2 on={on} onClick={setON}/>
+       {/* <OnOff2 on={on} onClick={setON}/>*/}
 
         {/*<Select titleValue={"MenuuBlya"} collapsed={collapsed} onClick={setCollapsed}/>
         <UncontrolledRating />
